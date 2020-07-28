@@ -1,6 +1,11 @@
 # ssl-cert-commands
 ssl-cert-commands
 
+Command to verify a cert.
+
+```
+openssl verify int2.crt
+```
 
 If more than 1 cert file is given, chain all certificates into one file (order is sub to root)
 ```
