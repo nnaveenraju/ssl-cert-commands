@@ -2,7 +2,7 @@
 ssl-cert-commands
 
 
-Chain all certificates into one file (order is sub to root)
+If more than 1 cert file is given, chain all certificates into one file (order is sub to root)
 ```
 cat intermediate2_pem.cer intermediate1_pem.cer thawte_root.cer > chain.cer
 ```
