@@ -56,8 +56,6 @@ Warning:
 The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore keystore.jks -destkeystore keystore.jks -deststoretype pkcs12".
 ```
 
-That is all folks! Hope this helps, and please feel free to leave any questions or comments.
-
 ls                                                                        
 example.pfx  example.key            keystore.p12
 example.crt  keystore.jks           truststore.jks
