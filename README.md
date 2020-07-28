@@ -3,13 +3,13 @@ ssl-cert-commands
 
 
 First, let's generate a key from the PFX file; this key is later used for p12 keystore.
-
+```
 openssl pkcs12 -in example.pfx -nocerts -out example.key  
 Enter Import Password:
 MAC verified OK
 Enter PEM pass phrase:
 Verifying - Enter PEM pass phrase:
-
+```
 
 As shown here, you will be asked for the password of the PFX file. Later, you will be asked to enter a PEM passphase. Let's, for example, use 123456 for everything here.
 
