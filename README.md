@@ -2,6 +2,11 @@
 ssl-cert-commands
 
 
+Chain all certificates into one file (order is sub to root)
+```
+cat intermediate2_pem.cer intermediate1_pem.cer thawte_root.cer > chain.cer
+```
+
 First, let's generate a key from the PFX file; this key is later used for p12 keystore.
 ```
 openssl pkcs12 -in example.pfx -nocerts -out example.key  
